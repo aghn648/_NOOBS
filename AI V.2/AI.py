@@ -18,7 +18,7 @@ class AI:
         self.rows = map.row_num
         self.cols = map.column_num
 
-        # choosing all flying units
+        # choosing the cheapest units
         all_base_units = world.base_units
         my_deck = [base_unit for base_unit in all_base_units if base_unit.ap < 5]
 
